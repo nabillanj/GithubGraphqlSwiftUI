@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB8182392B4B3B7000538AA3 /* RepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8182382B4B3B7000538AA3 /* RepositoryListViewModel.swift */; };
+		AB81823B2B4B43D800538AA3 /* AddRepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81823A2B4B43D800538AA3 /* AddRepositoryViewModel.swift */; };
+		AB81823E2B4B44C300538AA3 /* GithubGraphqlSwiftApi in Frameworks */ = {isa = PBXBuildFile; productRef = AB81823D2B4B44C300538AA3 /* GithubGraphqlSwiftApi */; };
+		AB8182402B4B492300538AA3 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81823F2B4B492300538AA3 /* Constant.swift */; };
+		AB8182432B4B4A9000538AA3 /* GithubGraphqlSwiftApi in Frameworks */ = {isa = PBXBuildFile; productRef = AB8182422B4B4A9000538AA3 /* GithubGraphqlSwiftApi */; };
+		AB8182452B4B4B9600538AA3 /* Query+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8182442B4B4B9600538AA3 /* Query+Extensions.swift */; };
+		AB8182472B4B4C5200538AA3 /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8182462B4B4C5200538AA3 /* RepositoryModel.swift */; };
+		ABD2CB5A2B4B2EC300D445DA /* GithubGraphqlSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD2CB592B4B2EC300D445DA /* GithubGraphqlSwiftUIApp.swift */; };
+		ABD2CB5C2B4B2EC300D445DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD2CB5B2B4B2EC300D445DA /* ContentView.swift */; };
+		ABD2CB5E2B4B2EC600D445DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD2CB5D2B4B2EC600D445DA /* Assets.xcassets */; };
+		ABD2CB612B4B2EC600D445DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD2CB602B4B2EC600D445DA /* Preview Assets.xcassets */; };
+		ABD2CB692B4B2EFC00D445DA /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = ABD2CB682B4B2EFC00D445DA /* Apollo */; };
+		ABD2CB6B2B4B2FA600D445DA /* apollo-codegen-config.json in Resources */ = {isa = PBXBuildFile; fileRef = ABD2CB6A2B4B2FA600D445DA /* apollo-codegen-config.json */; };
+		ABD2CB6E2B4B2FE700D445DA /* schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = ABD2CB6D2B4B2FE700D445DA /* schema.graphqls */; };
+		ABD2CB7D2B4B361F00D445DA /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD2CB7C2B4B361F00D445DA /* ErrorModel.swift */; };
+		ABD2CB802B4B364A00D445DA /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD2CB7F2B4B364A00D445DA /* View+Extension.swift */; };
+		ABD2CB822B4B366B00D445DA /* ErrorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD2CB812B4B366B00D445DA /* ErrorsView.swift */; };
+		ABD2CB842B4B377F00D445DA /* AddRepositoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD2CB832B4B377F00D445DA /* AddRepositoryView.swift */; };
+		ABD2CB872B4B37DF00D445DA /* GithubGraphqlSwiftApi in Frameworks */ = {isa = PBXBuildFile; productRef = ABD2CB862B4B37DF00D445DA /* GithubGraphqlSwiftApi */; };
+		ABD2CB8A2B4B38BE00D445DA /* ApolloNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD2CB892B4B38BE00D445DA /* ApolloNetwork.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB8182382B4B3B7000538AA3 /* RepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewModel.swift; sourceTree = "<group>"; };
+		AB81823A2B4B43D800538AA3 /* AddRepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRepositoryViewModel.swift; sourceTree = "<group>"; };
+		AB81823F2B4B492300538AA3 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		AB8182442B4B4B9600538AA3 /* Query+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Query+Extensions.swift"; sourceTree = "<group>"; };
+		AB8182462B4B4C5200538AA3 /* RepositoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModel.swift; sourceTree = "<group>"; };
+		ABD2CB562B4B2EC300D445DA /* GithubGraphqlSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubGraphqlSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD2CB592B4B2EC300D445DA /* GithubGraphqlSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubGraphqlSwiftUIApp.swift; sourceTree = "<group>"; };
+		ABD2CB5B2B4B2EC300D445DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ABD2CB5D2B4B2EC600D445DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABD2CB602B4B2EC600D445DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABD2CB6A2B4B2FA600D445DA /* apollo-codegen-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "apollo-codegen-config.json"; sourceTree = SOURCE_ROOT; };
+		ABD2CB6D2B4B2FE700D445DA /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
+		ABD2CB6F2B4B300F00D445DA /* Repository.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Repository.graphql; sourceTree = "<group>"; };
+		ABD2CB7C2B4B361F00D445DA /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		ABD2CB7F2B4B364A00D445DA /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		ABD2CB812B4B366B00D445DA /* ErrorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorsView.swift; sourceTree = "<group>"; };
+		ABD2CB832B4B377F00D445DA /* AddRepositoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRepositoryView.swift; sourceTree = "<group>"; };
+		ABD2CB892B4B38BE00D445DA /* ApolloNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloNetwork.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABD2CB532B4B2EC300D445DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB81823E2B4B44C300538AA3 /* GithubGraphqlSwiftApi in Frameworks */,
+				ABD2CB872B4B37DF00D445DA /* GithubGraphqlSwiftApi in Frameworks */,
+				AB8182432B4B4A9000538AA3 /* GithubGraphqlSwiftApi in Frameworks */,
+				ABD2CB692B4B2EFC00D445DA /* Apollo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB8182372B4B3B5D00538AA3 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AB8182382B4B3B7000538AA3 /* RepositoryListViewModel.swift */,
+				AB81823A2B4B43D800538AA3 /* AddRepositoryViewModel.swift */,
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		ABD2CB4D2B4B2EC300D445DA = {
+			isa = PBXGroup;
+			children = (
+				ABD2CB582B4B2EC300D445DA /* GithubGraphqlSwiftUI */,
+				ABD2CB572B4B2EC300D445DA /* Products */,
+				ABD2CB762B4B340800D445DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ABD2CB572B4B2EC300D445DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABD2CB562B4B2EC300D445DA /* GithubGraphqlSwiftUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABD2CB582B4B2EC300D445DA /* GithubGraphqlSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				AB8182372B4B3B5D00538AA3 /* viewModels */,
+				ABD2CB882B4B389F00D445DA /* network */,
+				ABD2CB7E2B4B363300D445DA /* extension */,
+				ABD2CB7B2B4B360E00D445DA /* model */,
+				ABD2CB792B4B360200D445DA /* view */,
+				ABD2CB6C2B4B2FE700D445DA /* graphql */,
+				AB81823F2B4B492300538AA3 /* Constant.swift */,
+				ABD2CB6A2B4B2FA600D445DA /* apollo-codegen-config.json */,
+				ABD2CB592B4B2EC300D445DA /* GithubGraphqlSwiftUIApp.swift */,
+				ABD2CB5D2B4B2EC600D445DA /* Assets.xcassets */,
+				ABD2CB5F2B4B2EC600D445DA /* Preview Content */,
+			);
+			path = GithubGraphqlSwiftUI;
+			sourceTree = "<group>";
+		};
+		ABD2CB5F2B4B2EC600D445DA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ABD2CB602B4B2EC600D445DA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ABD2CB6C2B4B2FE700D445DA /* graphql */ = {
+			isa = PBXGroup;
+			children = (
+				ABD2CB6D2B4B2FE700D445DA /* schema.graphqls */,
+				ABD2CB6F2B4B300F00D445DA /* Repository.graphql */,
+			);
+			path = graphql;
+			sourceTree = SOURCE_ROOT;
+		};
+		ABD2CB762B4B340800D445DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABD2CB792B4B360200D445DA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				ABD2CB5B2B4B2EC300D445DA /* ContentView.swift */,
+				ABD2CB812B4B366B00D445DA /* ErrorsView.swift */,
+				ABD2CB832B4B377F00D445DA /* AddRepositoryView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		ABD2CB7B2B4B360E00D445DA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				ABD2CB7C2B4B361F00D445DA /* ErrorModel.swift */,
+				AB8182462B4B4C5200538AA3 /* RepositoryModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ABD2CB7E2B4B363300D445DA /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				ABD2CB7F2B4B364A00D445DA /* View+Extension.swift */,
+				AB8182442B4B4B9600538AA3 /* Query+Extensions.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		ABD2CB882B4B389F00D445DA /* network */ = {
+			isa = PBXGroup;
+			children = (
+				ABD2CB892B4B38BE00D445DA /* ApolloNetwork.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABD2CB552B4B2EC300D445DA /* GithubGraphqlSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABD2CB642B4B2EC600D445DA /* Build configuration list for PBXNativeTarget "GithubGraphqlSwiftUI" */;
+			buildPhases = (
+				ABD2CB522B4B2EC300D445DA /* Sources */,
+				ABD2CB532B4B2EC300D445DA /* Frameworks */,
+				ABD2CB542B4B2EC300D445DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GithubGraphqlSwiftUI;
+			packageProductDependencies = (
+				ABD2CB682B4B2EFC00D445DA /* Apollo */,
+				ABD2CB862B4B37DF00D445DA /* GithubGraphqlSwiftApi */,
+				AB81823D2B4B44C300538AA3 /* GithubGraphqlSwiftApi */,
+				AB8182422B4B4A9000538AA3 /* GithubGraphqlSwiftApi */,
+			);
+			productName = GithubGraphqlSwiftUI;
+			productReference = ABD2CB562B4B2EC300D445DA /* GithubGraphqlSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABD2CB4E2B4B2EC300D445DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					ABD2CB552B4B2EC300D445DA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = ABD2CB512B4B2EC300D445DA /* Build configuration list for PBXProject "GithubGraphqlSwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABD2CB4D2B4B2EC300D445DA;
+			packageReferences = (
+				ABD2CB672B4B2EFC00D445DA /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				AB8182412B4B4A9000538AA3 /* XCLocalSwiftPackageReference "GithubGraphqlSwiftApi" */,
+			);
+			productRefGroup = ABD2CB572B4B2EC300D445DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABD2CB552B4B2EC300D445DA /* GithubGraphqlSwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABD2CB542B4B2EC300D445DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD2CB6E2B4B2FE700D445DA /* schema.graphqls in Resources */,
+				ABD2CB6B2B4B2FA600D445DA /* apollo-codegen-config.json in Resources */,
+				ABD2CB612B4B2EC600D445DA /* Preview Assets.xcassets in Resources */,
+				ABD2CB5E2B4B2EC600D445DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABD2CB522B4B2EC300D445DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8182392B4B3B7000538AA3 /* RepositoryListViewModel.swift in Sources */,
+				ABD2CB842B4B377F00D445DA /* AddRepositoryView.swift in Sources */,
+				AB8182452B4B4B9600538AA3 /* Query+Extensions.swift in Sources */,
+				ABD2CB7D2B4B361F00D445DA /* ErrorModel.swift in Sources */,
+				ABD2CB5C2B4B2EC300D445DA /* ContentView.swift in Sources */,
+				AB8182472B4B4C5200538AA3 /* RepositoryModel.swift in Sources */,
+				AB81823B2B4B43D800538AA3 /* AddRepositoryViewModel.swift in Sources */,
+				ABD2CB802B4B364A00D445DA /* View+Extension.swift in Sources */,
+				ABD2CB8A2B4B38BE00D445DA /* ApolloNetwork.swift in Sources */,
+				AB8182402B4B492300538AA3 /* Constant.swift in Sources */,
+				ABD2CB822B4B366B00D445DA /* ErrorsView.swift in Sources */,
+				ABD2CB5A2B4B2EC300D445DA /* GithubGraphqlSwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ABD2CB622B4B2EC600D445DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABD2CB632B4B2EC600D445DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABD2CB652B4B2EC600D445DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GithubGraphqlSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 46GYW88C6L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nabilla.test.GithubGraphqlSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABD2CB662B4B2EC600D445DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GithubGraphqlSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 46GYW88C6L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nabilla.test.GithubGraphqlSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABD2CB512B4B2EC300D445DA /* Build configuration list for PBXProject "GithubGraphqlSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD2CB622B4B2EC600D445DA /* Debug */,
+				ABD2CB632B4B2EC600D445DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABD2CB642B4B2EC600D445DA /* Build configuration list for PBXNativeTarget "GithubGraphqlSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD2CB652B4B2EC600D445DA /* Debug */,
+				ABD2CB662B4B2EC600D445DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		AB8182412B4B4A9000538AA3 /* XCLocalSwiftPackageReference "GithubGraphqlSwiftApi" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = GithubGraphqlSwiftApi;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ABD2CB672B4B2EFC00D445DA /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB81823D2B4B44C300538AA3 /* GithubGraphqlSwiftApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GithubGraphqlSwiftApi;
+		};
+		AB8182422B4B4A9000538AA3 /* GithubGraphqlSwiftApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GithubGraphqlSwiftApi;
+		};
+		ABD2CB682B4B2EFC00D445DA /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABD2CB672B4B2EFC00D445DA /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		ABD2CB862B4B37DF00D445DA /* GithubGraphqlSwiftApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GithubGraphqlSwiftApi;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ABD2CB4E2B4B2EC300D445DA /* Project object */;
+}
